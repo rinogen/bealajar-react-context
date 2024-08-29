@@ -1,13 +1,9 @@
-import { createContext, useContext } from 'react';
+import { createContext } from 'react';
 import './App.css';
 import Child from './components/Child';
 import { data } from './data/data';
 
-const DataContext = createContext();
-
-export const useData = () => {
-  return useContext(DataContext);
-};
+export const DataContext = createContext();
 
 function App() {
   return (

@@ -1,7 +1,8 @@
-import { useData } from '../App';
+import { useContext } from 'react';
+import { DataContext } from '../App';
 
 const Child = () => {
-  const { nama, kota, hobby } = useData();
+  const { nama, kota, hobby } = useContext(DataContext);
 
   return (
     <div>
